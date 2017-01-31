@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      My Photos
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-item>
+    <ion-row>
+      <ion-col width-50>
+        <button ion-button color="danger" type="button" full round large (click)="takePhoto()">
+                    <ion-icon name="md-camera"></ion-icon>
+                </button>
+      </ion-col>
+      <ion-col width-50>
+        <button ion-button color="secondary" type="button" full round large (click)="selectPhoto()">
+                    <ion-icon name="md-image"></ion-icon>
+                </button>
+      </ion-col>
+    </ion-row>
+  </ion-item>
+  <ion-item>
+    <img class="img-responsive" src="{{ myPhotoURL }}" />
+  </ion-item>
+</ion-content>
